@@ -1,0 +1,8 @@
+[
+ {"title":"예상보다 긴 취업 준비","description":"원했던 직업을 준비하는 데 시간이 더 필요해졌습니다.","choices":[{"choice":"공부와 자격 준비에 더 투자한다.","effects":{"경제":-5,"자기발전":10},"satisfaction":3},{"choice":"경제적 안정을 위해 다른 일을 병행한다.","effects":{"경제":7,"자기발전":-3},"satisfaction":2}]},
+ {"title":"갑작스러운 의료비","description":"예상하지 못한 건강 문제로 의료비가 발생했습니다.","choices":[{"choice":"저축을 활용하고 건강 관리 계획을 세운다.","effects":{"경제":-10,"건강":8},"satisfaction":4},{"choice":"생활비를 줄이고 치료를 우선한다.","effects":{"경제":-6,"건강":12},"satisfaction":2}]},
+ {"title":"가족의 변화","description":"가족 구성원의 상황이 달라져 시간과 자원을 조정해야 합니다.","choices":[{"choice":"가족과 대화해 역할을 나눈다.","effects":{"가족":10,"인간관계":7,"경제":-3},"satisfaction":5},{"choice":"일을 우선하고 필요한 부분을 외부 도움으로 해결한다.","effects":{"가족":-3,"경제":-6,"인간관계":-2},"satisfaction":0}]},
+ {"title":"직업 전환 기회","description":"새로운 분야로 이동할 수 있는 기회가 생겼습니다.","choices":[{"choice":"새로운 분야를 배우고 도전한다.","effects":{"자기발전":10,"경제":-5,"만족도":5},"satisfaction":6},{"choice":"현재 직업의 안정성을 유지한다.","effects":{"경제":7,"자기발전":-2},"satisfaction":2}]},
+ {"title":"예상치 못한 경제 상황","description":"가계의 수입 또는 지출에 변화가 생겼습니다.","choices":[{"choice":"비상자금을 사용하고 지출을 재설계한다.","effects":{"경제":-5,"자기발전":3},"satisfaction":3},{"choice":"추가 소득을 만들기 위해 시간을 투자한다.","effects":{"경제":8,"건강":-4},"satisfaction":2}]},
+ {"title":"새로운 인간관계","description":"새로운 사람들과 함께하는 활동에 참여할 기회가 생겼습니다.","choices":[{"choice":"적극적으로 참여한다.","effects":{"인간관계":10,"자기발전":5},"satisfaction":6},{"choice":"개인 시간을 확보한다.","effects":{"인간관계":-3,"건강":5,"자기발전":4},"satisfaction":4}]}
+]
