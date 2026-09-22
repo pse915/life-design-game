@@ -259,17 +259,41 @@ init_game()
 
 st.markdown('<div class="hero"><div class="eyebrow">HOME ECONOMICS · LIFE DESIGN</div><div class="hero-title">나의 생애 설계도</div><div class="hero-sub">가치관을 선택하고, 목표를 세우고, 예상하지 못한 삶의 사건에 대응하면서 나만의 생애 설계도를 만들어 봅니다.</div></div>', unsafe_allow_html=True)
 
-with st.sidebar:
-    st.markdown("### LIFE DESIGN")
-    sid = st.text_input("학번", value=st.session_state.get("student_id", ""), max_chars=20)
-    if sid.strip(): st.session_state.student_id = sid.strip()
-    st.divider()
-    if st.button("처음부터 다시", use_container_width=True):
-        reset_game(); st.rerun()
-    if st.button("교사용 모드", use_container_width=True): st.session_state.page = "teacher"
-
 if not st.session_state.get("student_id"):
-    st.info("왼쪽에서 학번을 입력하면 게임을 시작할 수 있습니다.")
+
+    st.markdown("""
+    <div class="hero" style="text-align:center;padding:55px 40px 45px;">
+        <div class="eyebrow">HOME ECONOMICS · LIFE DESIGN</div>
+        <h1 style="font-size:3rem;margin:12px 0;">나의 생애 설계도</h1>
+        <p class="muted" style="font-size:1.05rem;">
+            나의 가치관을 선택하고<br>
+            미래의 삶을 직접 설계해 보세요.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    _, center, _ = st.columns([1, 2, 1])
+
+    with center:
+        sid = st.text_input(
+            "학번",
+            placeholder="학번을 입력하세요",
+            max_chars=20,
+            key="start_student_id"
+        )
+
+        if st.button(
+            "게임 시작하기  →",
+            type="primary",
+            use_container_width=True
+        ):
+            if sid.strip():
+                st.session_state.student_id = sid.strip()
+                st.session_state.page = "values"
+                st.rerun()
+            else:
+                st.warning("학번을 입력해 주세요.")
+
     st.stop()
 
 page = st.session_state.page
